@@ -45,11 +45,10 @@ function removeFromCart(name) {
     return 'That item is not in your cart.'
   }else{
     for (var i =0; i < getCart().length; i++)
-  if (getCart()[i].itemName === name) {
+    if (getCart()[i].itemName === name) {
      getCart().splice(i,1);
      break;
-  }
-
+    }
   }
 }
 
