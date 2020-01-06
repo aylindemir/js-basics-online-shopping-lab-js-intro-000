@@ -41,21 +41,15 @@ return totalPrice
 }
 
 function removeFromCart(name) {
-
   for(let i =0;cart.length;i++){
     if(cart[i].itemName === name){
       cart.splice(i,1)
       break
     }else if(i === cart.length-1){
-      return 'That item is not in your cart.'
+      return  'That item is not in your cart.'
     }
     // continue
   }
-
-return cart
-  // cart = cart.filter(item => item.itemName != name)
-  //
-  // return cart
 }
 
 
