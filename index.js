@@ -41,13 +41,10 @@ return totalPrice
 }
 
 function removeFromCart(name) {
-  if(!cart.includes(name)){
+  if(!getCart().includes(name)){
     return 'That item is not in your cart.'
   }else{
-    const index = cart.indexOf(element);
-    if (index !== -1) {
-cart = getCart().splice(index, 1);
-}
+
   }
 }
 
