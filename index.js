@@ -44,6 +44,7 @@ function removeFromCart(name) {
 
   cart = cart.filter(item => item.itemName != name)
 
+return cart
 }
 
 
