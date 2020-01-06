@@ -41,7 +41,8 @@ return totalPrice
 }
 
 function removeFromCart(name) {
-    return getCart().filter(each => each.itemName != name)
+
+  cart = cart.filter(item => item.itemName != name)
 
 }
 
