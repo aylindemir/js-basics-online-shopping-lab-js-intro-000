@@ -50,10 +50,10 @@ function removeFromCart(name) {
     continue
   }
 
-
-  cart = cart.filter(item => item.itemName != name)
-
-  return cart
+return cart
+  // cart = cart.filter(item => item.itemName != name)
+  //
+  // return cart
 }
 
 
