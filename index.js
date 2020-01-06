@@ -49,7 +49,7 @@ function removeFromCart(name) {
     //  getCart().splice(i,1);
     //  break;
     // }
-    getCart() = getCart().filter(each => each.itemName != name)
+    cart = getCart().filter(each => each.itemName != name)
   }
 }
 
