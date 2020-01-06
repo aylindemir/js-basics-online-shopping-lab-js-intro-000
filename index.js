@@ -42,9 +42,18 @@ return totalPrice
 
 function removeFromCart(name) {
 
+  for(let i =0;cart.length;i++){
+    if(cart[i].itemName === name){
+      cart.splice(i,1)
+      break
+    }
+    continue
+  }
+
+
   cart = cart.filter(item => item.itemName != name)
 
-return cart
+  return cart
 }
 
 
