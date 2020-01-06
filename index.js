@@ -44,11 +44,10 @@ function removeFromCart(name) {
   if(!getCart().includes(name)){
     return 'That item is not in your cart.'
   }else{
-    for(let i=0;i<getCart().length;i++){
+    for(let i=0;i<getCart().length<i++){
       if(getCart()[i].itemName === name ){
-        return getCart().splice(i,1)
+        getCart().splice(i,1)
       }
-      continue
     }
 
   }
